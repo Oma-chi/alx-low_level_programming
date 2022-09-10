@@ -5,6 +5,7 @@
  *
  * Description: using the main function
  * prints numbers from 0 to 9
+ * Return: 0
  */
 int main(void)
 {
