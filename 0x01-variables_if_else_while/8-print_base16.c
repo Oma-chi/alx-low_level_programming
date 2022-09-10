@@ -4,7 +4,7 @@
  * main - prints numbers of base 16 in lowercase
  *
  * Description: using the main function
- * prints number of base 16 in lower case 
+ * prints number of base 16 in lower case
  * Return: 0
  */
 int main(void)
