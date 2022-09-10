@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphabet in lower case
+ * main - prints aphabet in lower and uppercase
  *
  * Description: using the main function
- * print aphabeth in lower case
+ * this function prints alphabet in lower and upper case
  * Return: 0
  */
 int main(void)
@@ -14,7 +14,11 @@ for (ch = 'a' ; ch <= 'z' ; ch++)
 {
 	putchar(ch);
 }
-putchar('\n');
+for (ch = 'A' ; ch <= 'Z' ; ch++)
+{
+	putchar(ch);
+}
+putchar("\n");
 return (0);
 }
 
