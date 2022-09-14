@@ -2,7 +2,7 @@
 
 /**
  * jack_bauer - function that prints every minute of the day of jack bauer,
- * dtarting from 00:00 t0 23:59, min loop counts min, while hour loop counts hours
+ * dtarting from 00:00 t0 23:59, min loop counts min, hour loop counts hours
  * Return: 0
  */
 void jack_bauer(void)
