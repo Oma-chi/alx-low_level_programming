@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - print putcar 
+ * main - print putcar
  * Return: always 0
  */
 int main(void)
