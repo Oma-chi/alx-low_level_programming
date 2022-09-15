@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_time_table - prints the times table with parameter
- * 
+ * print_times_table - prints the times table with parameter
+ *
  * @n: num to be initialised
  * Return: returns nothing
  */
