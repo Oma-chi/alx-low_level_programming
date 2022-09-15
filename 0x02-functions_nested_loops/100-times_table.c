@@ -2,7 +2,8 @@
 
 /**
  * print_time_table - prints the times table with parameter
- * @n: parameter
+ * 
+ * @n: num to be initialised
  * Return: returns nothing
  */
 void print_times_table(int n)
@@ -29,7 +30,7 @@ void print_times_table(int n)
 				if (result >= 100)
 				{
 					_putchar((result / 100) + '0');
-					_putchar((result / 10) +'0');
+					_putchar((result / 10) % 10 + '0');
 				}
 				else if (result <= 99 && result >= 10)
 				{
