@@ -1,7 +1,7 @@
 #inckude "main.h"
 
 /**
- * swap - a function that swaps the value of 2 integers
+ * swap_int - a function that swaps the value of 2 integers
  * @a: first integer
  * @b: second integer
  * Return: nothing
