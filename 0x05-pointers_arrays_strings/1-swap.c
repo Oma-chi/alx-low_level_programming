@@ -1,4 +1,4 @@
-#inckude "main.h"
+#include "main.h"
 
 /**
  * swap_int - a function that swaps the value of 2 integers

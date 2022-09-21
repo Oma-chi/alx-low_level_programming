@@ -1,21 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * puts - prints a string
+ * _puts - prints a string
  * @str: string to print
- * Description: prints a string
- * on success: returns no error
+ * Return: returns no error
  */
-void puts(char *str)
+void _puts(char *str)
 {
-	int i = 0;
-
-	while (*(str + i) != '\0')
+	for (; *str != '\0'; str++)
 	{
-		putchar(*(str + i));
-		i++;
+		_putchar(*str);
 	}
-	putchar(10);
+	_putchar('\n');
 }
 
