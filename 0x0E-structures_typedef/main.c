@@ -7,13 +7,11 @@
  */
 int main(void)
 {
-	struct dog my_dog;
+	dog_t *my_dog;
 
-	my_dog.name = "babby";
-	my_dog.age = 22;
-	my_dog.owner = "balu";
-	
-	print_dog(&my_dog);
+	my_dog = new_dog("poppy", 22, "lazy");
+	printf("my name is %s and i am %f\n", my_dog->name, my_dog->age);
+	free_dog(my_dog);
 
 	return (0);
 }
