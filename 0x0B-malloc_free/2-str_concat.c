@@ -20,7 +20,7 @@ int _strlen(char *s)
  * @s2: array two
  * Return: pointer to array or NULLon failure
  */
-char str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 	char *dst;
 	unsigned int i, j, size;
@@ -29,19 +29,17 @@ char str_concat(char *s1, char *s2)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	size = (_strlen(s1) + _strlen(s2));
-	dst = (char *) malloc(size * sizeof(char));
+	size = _strlen(s1) + _strlen(s2);
+	dst = malloc((size + 1) * sizeof(char));
 
-	if (dst == 0)
+	if (dst == NULL)
 		return (NULL);
-	for (i = 0; *(s1 + i) != '\0'; i++)
-		*(dst + i) = *(s1 + i);
 
-	for (j = 0; *(s2 + j) != '\0'; j++)
-	{
-		*(dst + i) = *(s2 + j);
-		i++;
-	}
+	for (i = 0; s1[i]; i++)
+		dst[i] = s1[i];
+	for (j = 0; s2[j]; j++, i++)
+		dst[i] = s2[j];
+	dst[i] = '\0';
 	return (dst);
 }
 
