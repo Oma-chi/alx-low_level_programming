@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * more_numbers - prints number to 14
+ * more_numbers - prints number from 1 to 14, 10 times
  *
  * Return: returns nothing
  */
@@ -14,9 +14,9 @@ void more_numbers(void)
 	{
 		for (j = 0; j <= 14; j++)
 		{
-			_putchar(j);
-			if (j == 14)
-				_putchar(10);
+			if (j >= 10)
+				_putchar('1');
+			_putchar(j % 10 + '0');
 		}
 		_putchar(10);
 	}
