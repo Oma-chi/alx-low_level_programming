@@ -6,18 +6,23 @@
  * @accept: the set of bytes to be searched for
  * Return: a pointer to the matched byte, null if not set
  */
-char *strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	unsigned int i = 0, j;
 
-	while (*s)
+	while (s[i])
 	{
-		for (i = 0; accept[i]; i++)
+		j = 0;
+		while (accept[j])
 		{
-			if (*s == accept[i])
+			if (s[i] == accept[j])
+			{
+				s += i;
 				return (s);
+			}
+			j++;
 		}
-		s++;
+		i++;
 	}
 	return ('\0');
 }
